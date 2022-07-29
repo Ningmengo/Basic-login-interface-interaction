@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
+    <meta charset="utf-8" />
+    <title>Login / Sign Up Form</title>
+    <link rel="stylesheet" href="main.css" />
+    <!--import word format-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <form class="form" id="login">
+        <h1 class="form_title">Login</h1> 
+        
+        <div class="form_input_group">
+          <input
+            type="text"
+            class="form_input"
+           autofocus  
+            placeholder="Username or email"
+          />
+        </div>
+        
+        <div class="form_input_group">
+          <input
+            type="password"
+            class="form_input"
+            autofocus
+            placeholder="Password"
+          />
+        </div>
+        <button class="form_button" type="submit">continue</button>
+        <p class="form_text">
+          <a href="#" id="LinkforgotPassword" class="form_link">Forgot your password?</a>
+        </p>
+        <p class="form_text">
+          <a href="#" class="form_link" id="LinkCreateAccount"
+            >Don't have an account? Create one.</a
+          >
+        </p>
+      </form>
+
+      <form class="form form_hidden" id="CreateAccount">
+        <h1 class="form_title">Create Account</h1> 
+        <div class="form_msg"> </div>
+        <div class="form_input_group">
+          <input
+            type="text"
+            class="form_input"
+           autofocus  
+            placeholder="Username"
+          />
+        </div>
+        
+        <div class="form_input_group">
+          <input
+            type="text"
+            class="form_input"
+            autofocus
+            placeholder="Email Address"
+          />
+        </div>
+
+        <div class="form_input_group">
+          <input
+            type="password"
+            class="form_input"
+            autofocus
+            placeholder="Password"
+          />
+        </div>
+
+        <div class="form_input_group">
+          <input
+            type="password"
+            class="form_input"
+            autofocus
+            placeholder="Confirm Password"
+          />
+        </div>
+
+        <button class="form_button" type="submit">continue</button>
+        <p class="form_text">
+          <a href="#" class="form_link" id = "link_signin">Already have an account? sign in</a>
+        </p>
+       
+      </form>
+
+
+      <form class="form form_hidden" id="forgotPassword">
+        <h1 class="form_title">Recover Password</h1> 
+
+        <h3 class="form_text">Enter your email address to get a password recovery link.</h3>
+        
+        <div class="form_input_group">
+          <input
+            type="text"
+            class="form_input"
+            autofocus  
+            placeholder="Enter your email"
+          />
+        </div>
+        
+        
+        <button class="form_button" type="submit">Recover Password</button>
+       
+        <p class="form_text">
+          <a href="#" class="form_link" id="LinkCreateAccount">
+            Don't have an account? Create one.
+          </a>
+        </p>
+      </form>
+
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
